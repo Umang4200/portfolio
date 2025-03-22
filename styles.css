@@ -79,6 +79,7 @@ section {
 }
 
 /* ================= About Section ================= */
+
 #about {
     background: #f9f9f9;
     text-align: center;
@@ -92,19 +93,22 @@ section {
 #about h2 {
     font-size: 32px;
     font-weight: bold;
-    color: #333;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     position: relative;
-    display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 #about h2::after {
     content: "";
-    display: block;
-    width: 50px;
+    width: 80px;
     height: 4px;
     background: #ff5733;
-    margin: 8px auto 0;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
     border-radius: 2px;
 }
 
