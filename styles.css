@@ -192,6 +192,28 @@ section {
 
 
 /* ================= Projects Section ================= */
+#projects h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#projects h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #ff5733;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
 #projects {
     text-align: center;
     background: #f9f9f9;
