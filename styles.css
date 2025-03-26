@@ -11,30 +11,49 @@ body {
     overflow-x: hidden;
 }
 
+
+/* ================= General Section Styles ================= */
+section {
+    min-height: 100vh;
+    scroll-margin-top: 80px;
+}
+
 /* ================= Sticky Navbar ================= */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background: #333;
+    background: #222;
     color: white;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #00c8ff;
 }
 
 /* Hamburger Menu */
@@ -51,11 +70,40 @@ body {
     transform: translateY(-50%);
 }
 
+/* ================= Responsive Design ================= */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: rgba(34, 34, 34, 0.95);
+        width: 220px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-links.show {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* ================= Hero Section ================= */
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background: lightblue;
+    background: #f9f9f9;
 }
 
 /* Profile Photo */
@@ -315,25 +363,3 @@ section {
     color: #ccc;
 }
 
-/* ================= Responsive Design ================= */
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background: #333;
-        width: 200px;
-        padding: 10px;
-        border-radius: 5px;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-}

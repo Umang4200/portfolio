@@ -11,44 +11,47 @@
 
 <body>
 
-    <!-- Sticky Navbar -->
-    <header class="navbar">
-        <h2>My Portfolio</h2>
-        <button class="hamburger" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </button>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+   <!-- Sticky Navbar -->
+<header class="navbar">
+    <h2 class="logo">My Portfolio</h2>
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </button>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="hero"> 
         <img src="images/profile.jpg" alt="My Photo" class="profile-photo">
         <h1>Hi, I'm Umang Patel</h1>
         <p>Frontend Developer | <span id="typing-effect"></span></p>
     </section>
 
-<!-- About Section -->
-<section id="about">
-    <div class="about-container">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate <strong>Frontend Developer</strong> who loves crafting 
-            beautiful, responsive, and interactive websites. With a strong foundation 
-            in <span class="highlight">HTML, CSS, and JavaScript</span>, I enjoy 
-            turning creative ideas into reality.
-        </p>
-        <p>
-            My goal is to continuously learn and improve, keeping up with 
-            modern web technologies to build seamless user experiences.
-        </p>
-    </div>
-</section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate <strong>Frontend Developer</strong> who loves crafting
+                beautiful, responsive, and interactive websites. With a strong foundation
+                in <span class="highlight">HTML, CSS, and JavaScript</span>, I enjoy
+                turning creative ideas into reality.
+            </p>
+            <p>
+                My goal is to continuously learn and improve, keeping up with
+                modern web technologies to build seamless user experiences.
+            </p>
+        </div>
+    </section>
 
 
     <!-- Skills Section -->
@@ -93,15 +96,15 @@
         </div>
     </section>
 
-<!-- Footer Section -->
-<footer class="footer">
-    <div class="social-links">
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-    </div>
-    <p class="footer-text">&copy; 2025 Umang Patel. All rights reserved.</p>
-</footer>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="footer-text">&copy; 2025 Umang Patel. All rights reserved.</p>
+    </footer>
 
 
     <script src="script.js"></script>
